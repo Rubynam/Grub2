@@ -1,0 +1,25 @@
+#Change theme gurb2 linux
+#Step 1
+#open sudo gedit /etc/default/grub
+
+
+# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet"
+GRUB_CMDLINE_LINUX=""
+..............
+.....................
+Some part of output omitted
+
+# Adding the following line
+GRUB_BACKGROUND = "/path/filename.png"
+#example
+#GRUB_BACKGROUND = "/home/pcDell/Pictures/grub2.png"
+#save
+#step 2
+#sudo update-grub
+#Finally, reboot pc, (hold down the SHIFT key to bring up the GRUB boot screen while rebooting)
